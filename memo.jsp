@@ -1,17 +1,15 @@
-<%@ page contentType="text/html; charset=utf-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head><title>클라이언트 및 서버 정보</title></head>
 <body>
-
-클라이언트 IP = <%= request.getRemoteAddr()%> <br>
-요청정보길이 = <%= request.getContentLength()%> <br>
-요청정보 인코딩 = <%= request.getCharacterEncoding()%> <br>
-요청정보 콘텐츠타입 = <%= request.getContentType()%> <br>
-요청정보 프로토콜 = <%= request.getProtocol()%> <br>
-요청정보 전송방식 = <%= request.getMethod()%> <br>
-요청 URI = <%= request.getRequestURI()%> <br>
-컨텍스트 경로 = <%= request.getContextPath()%> <br>
-서버이름 = <%= request.getServerName()%> <br>
-서버포트 = <%= request.getserverPort()%> <br>
+좋아나는 동물 :
+<input type="checkbox" name="pet" value="dog">강아지
+<input type="checkbox" name="pet" value="cat">고양이
+<input type="checkbox" name="pet" value="pig">돼지
+라디오 : <input type="checkbox" name="radio" size="10"> 라디오
+<input type="checkbox" name="radio" size="10">ㅇ
+<input type="checkbox" name="radio" size="10">ㅁ
+이름 : <input type="text" name="name" size="10"> <br>
 </body>
 </html>
